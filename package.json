@@ -1,0 +1,21 @@
+{
+  "name": "insomnia-plugin-totp",
+  "version": "1.0.0",
+  "author": "DCRichards",
+  "description": "Generate TOTP codes for requests",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "insomnia": {
+    "name": "totp",
+    "description": "Generate TOTP codes for requests"
+  },
+  "dependencies": {
+    "speakeasy": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
