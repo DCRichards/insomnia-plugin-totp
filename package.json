@@ -2,6 +2,7 @@
   "name": "insomnia-plugin-totp",
   "version": "1.0.0",
   "author": "DCRichards",
+  "license": "MIT",
   "description": "Generate TOTP codes for requests",
   "repository": "https://github.com/DCRichards/insomnia-plugin-totp",
   "bugs": {
