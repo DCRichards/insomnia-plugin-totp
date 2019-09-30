@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "author": "DCRichards",
   "description": "Generate TOTP codes for requests",
+  "repository": "https://github.com/DCRichards/insomnia-plugin-totp",
+  "bugs": {
+    "url": "https://github.com/DCRichards/insomnia-plugin-totp/issues/new"
+  },
   "main": "src/index.js",
   "scripts": {
     "test": "nyc mocha"
