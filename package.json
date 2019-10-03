@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-totp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "DCRichards",
   "license": "MIT",
   "description": "Generate TOTP codes for requests",
