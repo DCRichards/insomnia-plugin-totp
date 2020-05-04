@@ -17,9 +17,11 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+      # Thank you https://stackoverflow.com/a/58178121
+      - run: echo ::set-env name=RELEASE_VERSION::${GITHUB_REF:10}
       - run: |
           yarn
           yarn test
-      - run: yarn publish --new-version
+      - run: yarn publish --new-version $RELEASE_VERSION
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
