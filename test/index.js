@@ -1,3 +1,4 @@
+const speakeasy = require('speakeasy');
 const { expect } = require('chai');
 const { templateTags } = require('../src');
 
@@ -47,7 +48,16 @@ describe('insomnia-plugin-totp', () => {
 
     expect(code).to.be.a('string');
     expect(code).to.have.lengthOf(6);
+    done();
+  });
 
+  it('Should generate valid totp code', (done) => {
+    const secret = 'MHEEZLDFFMM';
+    const token = totp(secret);
+
+    const valid = speakeasy.totp.verify({ encoding: 'base32', secret, token });
+
+    expect(valid).to.equal(true);
     done();
   });
 });

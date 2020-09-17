@@ -1,10 +1,17 @@
 {
   "name": "insomnia-plugin-totp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "DCRichards",
   "license": "MIT",
   "description": "Generate TOTP codes for requests",
-  "keywords": ["insomnia", "plugin", "totp", "two factor", "2fa", "authentication"],
+  "keywords": [
+    "insomnia",
+    "plugin",
+    "totp",
+    "two factor",
+    "2fa",
+    "authentication"
+  ],
   "repository": "https://github.com/DCRichards/insomnia-plugin-totp",
   "bugs": {
     "url": "https://github.com/DCRichards/insomnia-plugin-totp/issues/new"
