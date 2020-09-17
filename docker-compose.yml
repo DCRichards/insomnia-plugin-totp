@@ -3,8 +3,6 @@ services:
   plugin:
     build: .
     volumes:
-      - ./package.json:/usr/src/app/package.json
-      - ./yarn.lock:/usr/src/app/yarn.lock
-      - ./src:/usr/src/app/src
-      - ./test:/usr/src/app/test
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
     command: "yarn test"
