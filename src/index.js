@@ -1,6 +1,6 @@
 const speakeasy = require('speakeasy');
+const { parseUri } = require('./uri');
 const pkg = require('../package.json');
-const uri = require('./uri');
 
 module.exports.templateTags = [
   {
@@ -31,7 +31,7 @@ module.exports.templateTags = [
         secret = secretParam;
       } else {
         try {
-          secret = uri.parseUri(uriParam);
+          secret = parseUri(uriParam);
         } catch (err) {
           throw new Error(`Invalid URI: ${err.message}`);
         }
